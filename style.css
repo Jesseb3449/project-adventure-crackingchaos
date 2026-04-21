@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mm-Btns: #0D1E3A;
+    --universal-white: #ffffff;
+}
+
+#game-Scene {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-image: url(/imagines/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main-Menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-Menu-Btns {
+    display: flex;
+    flex-direction: column;
+    height:30vh;
+    width:33vw;
+    justify-content:space-around;
+}
+
+.mm-Btns {
+    font-family: "Orbitron", sans-serif;
+    font-style: normal;
+    background-color: var(--mm-Btns);
+    color: var(--universal-white);
+    cursor: pointer;
+    border:none;
+    height: 5vh;
+    width: 100%;
+}
