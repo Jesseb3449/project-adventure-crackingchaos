@@ -100,8 +100,10 @@ img [src="/images/jessie-female.png"]{
 
 #back > img{
     transform: rotateY(180deg);
-    height:15vh;
+    height:5vh;
     justify-self: flex-start;
+    margin-left:2vw;
+    margin-top:2vh;
 }
 
 .characters > img {
@@ -117,7 +119,20 @@ img [src="/images/jessie-female.png"]{
 .choices {
     background-color: var(--decision);
     color: black;
-    height: 12vh;
+    height: 7vh;
     width: 25vw;
-    border: 0.25rem  var(--decision);
+    border:none;
+}
+
+#scene {
+    height: 65vh;
+}
+
+#game-Container {
+   min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0.5;
 }
