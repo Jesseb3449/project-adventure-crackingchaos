@@ -16,7 +16,13 @@
 <div id="app">
     
     <section id="back-Btn-Container">
-        <button onclick="back()" id="back" class="back"> 
+        <button id="back" class="back"> 
+            <img src="/images/white-arrow.png">
+        </button>
+        <button onclick="goTo('character-Select-male')" id="back" class="back"> 
+            <img src="/images/back-arrow.png">
+        </button>
+        <button onclick="goTo('game-Screen')" id="back" class="back"> 
             <img src="/images/back-arrow.png">
         </button>
     </section>
@@ -116,16 +122,19 @@
 
     <!--Start of Main Game Screen-->
     <div id="game-Screen" class="screen"> 
-        <div class="background" id="background"><img src="" alt="story background"></div>
+        <section id="game-Container">
+            <div class="background" id="background"><img src="images/placeholder.jpeg" id="scene" alt="story background"></div>
         <section id="current-text" class="text-cont"></section>
         <section id="choice-Container">
             <button id="choice-1" class="choices"></button>
             <button id="choice-2" class="choices"></button>
             <button id="choice-3" class="choices"></button>
         </section>
+        </section>
+
     </div>
      <!--End of Main Game Screen-->
 </div>
-    <script src="app.js"></script>
+    <script type="module" src="app.js"></script>
 </body>
 </html>
