@@ -93,8 +93,31 @@ img [src="/images/jessie-female.png"]{
     transform: rotateY('180deg');
 }
 
+#back{
+    background-color:transparent;
+    border:none;
+}
 
-#Rei > img {
-    height: 20vh;
-    width: 15vw;
+#back > img{
+    transform: rotateY(180deg);
+    height:15vh;
+    justify-self: flex-start;
+}
+
+.characters > img {
+    height: 50vh;
+}
+
+#choice-Container {
+   min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.choices {
+    background-color: var(--decision);
+    color: black;
+    height: 12vh;
+    width: 25vw;
+    border: 0.25rem  var(--decision);
 }
