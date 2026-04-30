@@ -40,7 +40,7 @@ startButton.addEventListener("click", starter =>{
     mainMenu.style.display = "none";
 })
 maleButton.addEventListener("click", male =>{
-    goTo("character-Select-male");
+   
     gender = "male";
     return gender;
 })
